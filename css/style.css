@@ -1,0 +1,104 @@
+/**** Kalam ****/
+
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "Kalam", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(45deg, purple, dodgerblue);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main {
+  margin: 10px 0px 10px 0px;
+  text-transform: uppercase;
+  width: 300px;
+}
+.people-entered {
+  font-size: 54px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Kalam", sans-serif;
+}
+.count {
+  font-size: 100px;
+  /* margin: 0 0 20px 0; */
+  cursor: pointer;
+}
+/* BTN  */
+.math-btn {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 300px; */
+}
+.btn {
+  font-size: 18px;
+  width: 145px;
+  font-family: sans-serif;
+  padding: 12px 14px;
+  color: #fff;
+  background: rgb(182, 0, 0);
+  outline: none;
+  border: 1px solid darkslategrey;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 8px 8px 6px -6px black;
+  transition: 0.3s ease;
+}
+.btn-increment {
+  background: rgb(0, 136, 182);
+}
+.btn-determine {
+}
+.btn:active {
+  background: salmon;
+  box-shadow: 8px 8px 6px -6px black;
+  border: 1px solid #fff;
+}
+/* SAVE  */
+.save-btn {
+  font-size: 24px;
+  margin-top: 10px;
+  background: green;
+  padding: 8px 14px;
+  width: 300px;
+}
+.amount {
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 24px;
+}
+#total {
+  color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    height: 100%;
+  }
+  .main {
+    font-style: 16px;
+    height: 100%;
+  }
+  .main > p {
+    font-size: 16px;
+  }
+}
